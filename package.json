@@ -8,7 +8,7 @@
     "build": "eleventy",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "e2e": "start-server-and-test http://localhost:8080/ cy:run"
+    "e2e": "start-server-and-test start http://localhost:8080 cy:run"
   },
   "repository": {
     "type": "git",
