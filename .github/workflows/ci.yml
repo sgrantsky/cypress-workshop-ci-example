@@ -31,9 +31,11 @@ jobs:
         run: npm start &
 
       - name: Run Cypress tests 🧪
-        run: npm run cy:run
+        run: npx cypress run --record
         env:
-          CYPRESS-RECORD-KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # pass the record key as environment variable
+          # during this CI step
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       - name: Upload any screenshots and videos 📼
         uses: actions/upload-artifact@v2
