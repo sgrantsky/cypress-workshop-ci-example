@@ -9,7 +9,7 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
-       - name: Cache dependencies 💎
+      - name: Cache dependencies 💎
         uses: actions/cache@v2
         with:
           path: |
