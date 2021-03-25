@@ -13,3 +13,11 @@ Requires Node
 npm install
 npm start
 ```
+
+## Useful Commands
+
+```
+npx cypress info
+npx cypress version
+npx cypress cache
+```
