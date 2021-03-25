@@ -4,12 +4,7 @@ name: ci
 on: [push]
 jobs:
   build-and-test:
-    strategy:
-      # do not stop the matrix if one of the jobs fails
-      fail-fast: false
-      matrix:
-        os: [macos-latest, windows-latest, ubuntu-20.04]
-      runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
